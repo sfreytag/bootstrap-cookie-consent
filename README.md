@@ -17,4 +17,7 @@ biggest TODO. Rebuilding this as a widget using the boostrap data-api would be g
 the meantime I thought I'd release it here in case anyone uses it, which would
 motivate me to make it better.
 
-Demo of this widget in action: http://www.cycletraining.co.uk
+A demo of this widget in action can be found here: http://www.cycletraining.co.uk
+
+To use it, simply add the JS to your website and edit the properties within the file.
+You can tweak the HTML to alter the widget position.
