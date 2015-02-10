@@ -1,6 +1,6 @@
 # bootstrap-cookie-consent
 
-This is a simple widget to handle implicit cookie consent in a bootstrap-styled widget.
+This is a simple widget to handle implicit cookie consent in a Bootstrap-styled widget.
 
 I needed to do implicit cookie consent for a Boostrap-based web site, and the 
 existing widgets I found were limited by:
