@@ -34,13 +34,11 @@ C = {
             'margin-bottom: 0"><strong>' + this.bannerTitle + '</strong> ' +
             this.bannerMessage + ' <a href="' + this.bannerLinkURL + '">' +
             this.bannerLinkText + '</a> <button type="button" class="btn ' +
-            'btn-success" data-dismiss="alert" aria-label="Close">' +
+            'btn-success" onclick="C.createCookie(C.cookieName, C.cookieValue' +
+            ', C.cookieDuration)" data-dismiss="alert" aria-label="Close">' +
             this.bannerButton + '</button></div>'
         )
         $("body").append(banner)
-        this.createCookie(
-            this.cookieName, this.cookieValue, this.cookieDuration
-        )
     },
 
     createCookie: function(name, value, days) {
