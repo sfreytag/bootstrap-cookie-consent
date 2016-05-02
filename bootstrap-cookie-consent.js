@@ -27,14 +27,21 @@ C = {
     // Link text
     bannerLinkText: "Read more",
 
+    // Text alignment
+    alertAlign: "center",
+    
+    // Link text
+    buttonClass: "btn-success btn-xs",    
+
     createDiv: function () {
         var banner = $(
-            '<div class="alert alert-success alert-dismissible fade in" ' +
+            '<div class="alert alert-success alert-dismissible text-'+
+             this.alertAlign +' fade in" ' +
             'role="alert" style="position: fixed; bottom: 0; width: 100%; ' +
             'margin-bottom: 0"><strong>' + this.bannerTitle + '</strong> ' +
             this.bannerMessage + ' <a href="' + this.bannerLinkURL + '">' +
             this.bannerLinkText + '</a> <button type="button" class="btn ' +
-            'btn-success" onclick="C.createCookie(C.cookieName, C.cookieValue' +
+             this.buttonClass + '" onclick="C.createCookie(C.cookieName, C.cookieValue' +
             ', C.cookieDuration)" data-dismiss="alert" aria-label="Close">' +
             this.bannerButton + '</button></div>'
         )
@@ -42,7 +49,7 @@ C = {
     },
 
     createCookie: function(name, value, days) {
-        console.log("Create cookie")
+        //console.log("Create cookie")
         var expires = ""
         if (days) {
             var date = new Date()
